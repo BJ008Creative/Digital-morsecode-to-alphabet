@@ -61,7 +61,7 @@ set_property top tb_core [get_filesets sim_1]
 |---|---|---|
 | `tb_decoder` | All 26 letters and invalid patterns | PASS |
 | `tb_debounce` | Glitches ignored, real edges accepted | PASS |
-| `tb_core` | SOS, HI, MAKE, too-long pattern | Correct letters and spaces |
+| `tb_core` | SOS, HI, MAKE, too-long pattern | PASS (self-checking) |
 | `tb_lcd` | LCD init sequence, writes, line wrap, clear | Correct sequence |
 | `tb_top` | Bouncy button -> whole chain -> simulated LCD | PASS (`HI SOS`) |
 
